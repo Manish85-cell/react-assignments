@@ -19,3 +19,49 @@ Explore objects:
  - Create an object representing a person with properties like name, age, and country.
  - Write a function that takes a person object as an argument and logs their information.
 */
+
+let name = "Manish";
+console.log(typeof(name));
+console.log(name);
+let age = 17;
+console.log(age);
+
+function cvrtNumbertoString(inp)
+{
+  return Number(inp);
+}
+function cvrtStringToNumber(inp)
+{
+  return parseInt(inp);
+}
+
+
+const fav_fruit = ["Mango", "Apple", "banana"];
+for(let i = 0; i<fav_fruit.length; i++)
+ {
+   console.log(fav_fruit[i]);
+ }
+
+const arr = [1, 2, 1, 12, 43];
+int largest = arr[0];
+for(let i = 1; i<arr.length; i++)
+ {
+   if(arr[i] > largest)
+   {
+     largest = arr[i];
+   }
+ }
+console.log(largest);
+
+var person = {name:"Manish" age:"17" country:"India"};
+function display(person)
+{
+  console.log(person.name);
+  console.log(person.age);
+  console.log(person.country);
+}  
+display(person)
+
+
+
+
