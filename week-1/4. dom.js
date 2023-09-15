@@ -11,4 +11,23 @@ Create counter:
  - create a javscript file and impelent the increase and decrease functionality.
  - implement logic that the number should not go below zero. 
  - give it some styles in css file and link it with html
- */
+ */   function count() {
+
+            document.querySelector('h1').innerHTML++;
+        }
+        function countlow() {
+
+            let h = document.querySelector('h1').innerHTML;
+            if (h == 0) {
+                alert('count cannot be negative');
+            }
+            else {
+                document.querySelector('h1').innerHTML--;
+            }
+        }
+        
+            document.querySelector('select').onchange = function(){
+                document.querySelector('p').style.color = this.value;
+            }
+       
+
